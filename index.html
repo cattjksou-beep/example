@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ferun shop - Official</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+--bg:#FFF5F8;
+--main:#F8BBD0;
+--dark:#D81B60;
+--accent:#FCE4EC;
+--white:#FFFFFF;
+--glow:rgba(248, 187, 208, 0.45);
+--soft:#FFEFF4;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Mitr',sans-serif;
+}
+
+body{
+background:linear-gradient(to bottom,#FFF7FA,#FFEFF5);
+display:flex;
+justify-content:center;
+min-height:100vh;
+}
+
+.container{
+max-width:520px;
+width:100%;
+padding:20px 15px 40px;
+}
+
+.center{
+text-align:center;
+margin-bottom:20px;
+}
+
+.logo{
+width:150px;
+height:150px;
+border-radius:50%;
+overflow:hidden;
+margin:0 auto 20px;
+box-shadow:0 8px 25px var(--glow);
+border:5px solid white;
+background:white;
+}
+
+.logo img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+h1,h2,h3{
+color:var(--dark);
+margin-bottom:12px;
+}
+
+p{
+color:#666;
+}
+
+.section{
+background:rgba(255,255,255,0.95);
+border-radius:25px;
+padding:22px;
+margin-bottom:20px;
+box-shadow:0 8px 25px rgba(0,0,0,0.04);
+border:2px solid var(--main);
+backdrop-filter: blur(6px);
+}
+
+.badges{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:10px;
+margin-bottom:20px;
+}
+
+.badge{
+background:white;
+padding:9px 16px;
+border-radius:999px;
+font-size:13px;
+color:var(--dark);
+border:1.5px solid var(--main);
+box-shadow:0 4px 12px var(--glow);
+}
+
+.price-row{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:12px;
+padding:12px 15px;
+background:var(--soft);
+border-radius:16px;
+border-left:5px solid var(--main);
+}
+
+.price-tag{
+background:var(--main);
+color:white;
+padding:4px 12px;
+border-radius:999px;
+font-size:13px;
+}
+
+.btn{
+display:block;
+text-align:center;
+padding:14px;
+border-radius:999px;
+text-decoration:none;
+margin-top:15px;
+font-weight:500;
+transition:0.3s;
+}
+
+.btn-outline{
+background:white;
+border:2px dashed var(--main);
+color:var(--dark);
+}
+
+.btn-outline:hover{
+background:var(--accent);
+}
+
+.btn-main{
+background:var(--main);
+color:white;
+}
+
+.btn-main:hover{
+background:var(--dark);
+}
+
+.step{
+display:flex;
+align-items:center;
+gap:12px;
+margin-bottom:12px;
+color:#555;
+}
+
+.step-num{
+background:var(--main);
+color:white;
+width:28px;
+height:28px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:13px;
+font-weight:bold;
+}
+
+.small{
+font-size:12px;
+opacity:.7;
+margin-top:10px;
+}
+
+.footer{
+text-align:center;
+margin-top:25px;
+}
+
+.socials{
+display:flex;
+gap:10px;
+justify-content:center;
+margin-top:15px;
+flex-wrap:wrap;
+}
+
+.socials a{
+flex:1;
+max-width:120px;
+text-align:center;
+padding:10px;
+border-radius:999px;
+background:white;
+text-decoration:none;
+color:var(--dark);
+font-size:13px;
+border:1.5px solid var(--main);
+transition:0.3s;
+}
+
+.socials a:hover{
+background:var(--accent);
+}
+
+.queue-box{
+background:var(--soft);
+border-radius:18px;
+padding:15px;
+margin-top:15px;
+border:2px dashed var(--main);
+}
+
+.queue-box textarea{
+width:100%;
+height:130px;
+border:none;
+outline:none;
+resize:none;
+background:white;
+padding:12px;
+border-radius:14px;
+font-size:14px;
+color:#555;
+box-shadow: inset 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.queue-box p{
+font-size:12px;
+margin-bottom:8px;
+color:#888;
+}
+
+.rules li{
+margin-bottom:8px;
+color:#555;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="center">
+<div class="logo">
+<img src="https://via.placeholder.com/150" alt="Ferun shop Logo">
+</div>
+
+<h1>Ferun shop</h1>
+<p>ยินดีต้อนรับเข้าสู่ร้านเฟรุนช็อป ♡</p>
+</div>
+
+<div class="badges">
+<span class="badge">🎨 งานป้าย</span>
+<span class="badge">💎 โลโก้</span>
+<span class="badge">🌐 งานเว็บ</span>
+<span class="badge">✨ Fast Work</span>
+</div>
+
+<div class="section">
+<h3>📋 สถานะคิวงาน</h3>
+
+<div class="price-row">
+<span>คิวปัจจุบัน</span>
+<span class="price-tag">เปิดรับปกติ</span>
+</div>
+
+<a href="https://drive.google.com/drive/folders/16FMtPJk_EQXHmDn90jwkJ85o5jWtu6WY" class="btn btn-outline">
+⭐ ดูตัวอย่างงานที่นี่
+</a>
+
+<!-- แท็บเช็คคิว -->
+<div class="queue-box">
+<p>✏️ แก้ไขคิวงานได้เองตรงนี้</p>
+
+<textarea>
+📌 คิวที่ 01 - งานโลโก้
+📌 คิวที่ 02 - งานป้ายเซิร์ฟ
+📌 คิวที่ 03 - งานเว็บไซต์
+
+อัปเดตล่าสุด : 11/05/2026
+</textarea>
+
+</div>
+
+</div>
+
+<div class="section">
+<h3>🎨 บริการของเรา</h3>
+
+<div class="price-row">
+<span>รับทำงานป้าย</span>
+<span class="price-tag">Popular</span>
+</div>
+
+<div class="price-row">
+<span>รับทำงานโลโก้</span>
+<span class="price-tag">Creative</span>
+</div>
+
+<div class="price-row">
+<span>รับทำงานเว็บ</span>
+<span class="price-tag">Coding</span>
+</div>
+
+</div>
+
+<div class="section">
+<h3>📋 ระยะเวลาดำเนินงาน</h3>
+
+<div class="step">
+<div class="step-num">1</div>
+<div>ปกติ : รองาน 2-3 วัน (ตามคิว)</div>
+</div>
+
+<div class="step">
+<div class="step-num">2</div>
+<div>งานเร่ง x2 : ภายใน 24 ชม.</div>
+</div>
+
+<div class="step">
+<div class="step-num">3</div>
+<div>งานเร่ง x3 : ภายใน 2-3 ชม.</div>
+</div>
+
+</div>
+
+<div class="section">
+<h3>📋 ขั้นตอนการสั่งซื้อ</h3>
+
+<div class="step">✅ กรอกฟอร์มและรายละเอียดให้ครบ</div>
+<div class="step">✅ แนบตัวอย่างงาน / โลโก้ (ถ้ามี)</div>
+<div class="step">✅ เช็คงาน แจ้งยอด และชำระเงิน</div>
+<div class="step">✅ รอรับลิงก์งานได้เลย ♡</div>
+
+</div>
+
+<div class="section">
+
+<h3>📍 กฎของร้าน</h3>
+
+<ul class="rules" style="list-style:none;">
+<li>• โอนเงินแล้วไม่คืนเงินทุกกรณี</li>
+<li>• ยกเลิกหลังเริ่มงาน คืนเงิน 50%</li>
+<li>• ยกเลิกหลังเช็คงาน = ไม่คืนเงิน</li>
+</ul>
+
+</div>
+
+<div class="footer">
+
+<h3>📱 ช่องทางติดต่อ</h3>
+
+<div class="socials">
+<a href="https://www.facebook.com/share/1KdREVYQdE/">Facebook</a>
+<a href="https://discord.gg/gYuM27gh3D">Discord</a>
+</div>
+
+<p class="small">
+Ferun shop © 2026 — ทุ่มเททุกความน่ารักเพื่อคุณ ♡
+</p>
+
+</div>
+
+</div>
+
+</body>
+</html>
